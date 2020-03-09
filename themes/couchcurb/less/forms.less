@@ -1,0 +1,209 @@
+// forms.less
+
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] , a.button {
+	/*border: 1px solid;
+	border-color: #ccc #ccc #bbb;
+	border-radius: 3px;
+	background: #e6e6e6;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+	color: rgba(0, 0, 0, .8);
+	font-size: 12px;
+	font-size: 0.75rem;
+	line-height: 1;
+	padding: .6em 1em .4em;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);*/
+        background-color: @accent;
+    
+    .transitionColors();
+        color: @white;
+        text-transform: uppercase;
+        box-shadow: none;
+        border: none;
+        padding: .5em 2em;
+        border-radius: 0;
+        font-size: .9em;
+        line-height:inherit;
+    text-decoration: none;
+        text-shadow: none;
+        font-weight: bold;
+        display: table-cell;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+            box-sizing: border-box;  
+    
+}
+a.button {
+    display: inline-block;
+}
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover, a.button:hover {
+	/*border-color: #ccc #bbb #aaa;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);*/
+    background-color: @accent-darker;
+    color: @white;
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+	border-color: #aaa #bbb #bbb;
+	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+input[type="range"] {
+    border: none;
+}
+
+
+select {
+	border: 1px solid #ccc;
+}
+
+
+option {
+    background : white;
+     color: gray;
+    font-weight: normal;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+	color: #111;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"] {
+	padding: 3px;
+}
+
+textarea {
+	padding-left: 3px;
+	width: 100%;
+}
+
+.post-password-form {
+    input[type="submit"] , a.button {
+        margin-left: 1em;
+    }
+}
+.gform_wrapper .fiftyfiftygrid {
+   
+    //margin-bottom: 1em;
+    
+    ul.gfield_checkbox li,  ul.gfield_radio li {
+        width: 50%;
+        float: left;
+        margin-bottom: 1em;
+    }
+}
+@media screen and (max-width: @grid-max-breakpoint3) {
+
+    .post-password-form {
+        input[type="submit"] , a.button {
+            margin-left: 0;
+            width: 100%;
+            margin-top: 1em;
+        }
+    }
+}
+.spu-box {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; 
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+#spu-6624 {
+    border: none !important;
+    //border: 2px solid @white !important;
+    //background-color: @white !important;
+     background-color: rgba(225,24,55,.8) !important;
+    color: @white;
+    
+}
+.spu-content {
+   
+}
+#mc_embed_signup {
+     //background-color: @accent !important;
+    background-color: transparent !important;
+    color: @white;
+    .button {
+        background-color: @white !important;
+        color: @accent !important;
+        &:hover {
+            //background-color: @accent-light !important;
+            opacity: .7 !important;
+        }
+    }
+    .asterisk {
+        color: @white !important;
+    }
+    input {
+        border: none !important;
+        &:focus{
+            outline: none !important;
+        }
+    }
+}
+

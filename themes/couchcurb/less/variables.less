@@ -1,0 +1,118 @@
+// variables.less
+
+// Colors
+@white: #fff;
+@background: white;
+@background: rgba(255,255,255,1);
+@background-transparent: rgba(255,255,255,0);
+@background-translucent: rgba(255,255,255,.9);
+@black: black;
+@black: rgba(0,0,0,1);
+@black-transparent: rgba(0,0,0,0);
+
+@gray: #606a70;
+@gray: rgba(96,106,112,1);
+@gray-transparent: rgba(96,106,112,0);
+@gray-translucent: rgba(96,106,112,.6);
+@gray-dark: darken(@gray,20%);
+@gray-darker: darken(@gray,40%);
+@gray-light: lighten(@gray,20%);
+@gray-lighter: lighten(@gray,40%);
+
+@accent: #967d5e;
+@accent: rgba(150,125,94,1);
+@accent-transparent: rgba(150,125,94,0);
+@accent-translucent: rgba(150,125,94,.6);
+@accent-dark: darken(@accent,12%);
+@accent-darker: darken(@accent,40%);
+@accent-light: lighten(@accent,20%);
+@accent2: #dc8b29;
+@accent2: rgba(220,139,41,1); 
+@accent2-transparent: rgba(220,139,41,0);
+@accent2-translucent: rgba(220,139,41,.9);
+@accent2-dark: darken(@accent2,12%);
+@accent2-darker: darken(@accent2,40%);
+@accent2-light: lighten(@accent2,20%);
+@accent3: #5ab7b2;
+@accent3: rgba(90,183,178,1);
+@accent3-transparent: rgba(90,183,178,0);
+@accent3-translucent: rgba(90,183,178,.9);
+@accent3-dark: darken(@accent3,12%);
+@accent3-darker: darken(@accent3,40%);
+@accent3-light: lighten(@accent3,20%);
+@accent4: #5ba268;
+@accent4: rgba(91,162,104,1);
+@accent4-transparent: rgba(91,162,104,0);
+@accent4-translucent: rgba(91,162,104,.9);
+@accent4-dark: darken(@accent4,12%);
+@accent4-darker: darken(@accent4,40%);
+@accent4-light: lighten(@accent4,20%);
+@accent5: #5ba268;
+@accent5: rgba(91,162,104,1);
+@accent5-transparent: rgba(91,162,104,0);
+@accent5-translucent: rgba(91,162,104,.9);
+@accent5-dark: darken(@accent5,12%);
+@accent5-darker: darken(@accent5,40%);
+@accent5-light: lighten(@accent5,20%);
+@accent6: #5ba268;
+@accent6: rgba(91,162,104,1);
+@accent6-transparent: rgba(91,162,104,0);
+@accent6-translucent: rgba(91,162,104,.9);
+@accent6-dark: darken(@accent6,12%);
+@accent6-darker: darken(@accent6,40%);
+@accent6-light: lighten(@accent6,20%);
+ 
+// Content
+@body-background-color: @background;
+@body-color: @gray;
+@content-background-color: @gray-dark;
+
+// Grid and Media Query Breakpoints
+@grid-max-width: 1499px;
+@grid-max-width-padded: (@grid-max-width + 150px);
+@grid-max-breakpoint1: 1499px;
+@grid-max-breakpoint2: 991px;
+@grid-max-breakpoint3: 767px; // Mobile
+@grid-max-breakpoint4: 429px; // Mobile2
+@grid-min-breakpoint1: 1500px;
+@grid-min-breakpoint2: 992px;
+@grid-min-breakpoint3: 768px; // Mobile
+@grid-min-breakpoint4: 430px; // Mobile2
+@site-padding: 20px;
+@site-padding: 2rem;
+@blog-small-padding:  @site-padding / 2;
+@blog-padding: @blog-small-padding * 3;
+
+// Header
+@site-title-color: @gray;
+@site-title-color-hover: @accent;
+@site-description-color: @gray;
+ 
+// Links
+@links-color: @accent;
+@links-color-hover: @accent-dark;
+ 
+// Navigation
+@menu-items-color-active: @gray-dark;
+@menu-items-color: @gray;
+@menu-items-color-hover: @gray-dark;
+@menu-items-back: transparent;
+@menu-items-back-hover: transparent;
+ 
+// Posts
+@entry-title-color: @gray-light;
+@border-color: @gray-dark;
+ 
+// Widgets
+@search-form-background-color: @background;
+@search-form-border-color: @gray-dark;
+@search-form-text-color: @gray;
+
+
+// Footer
+@footer-background-color: @gray-lighter;
+
+// Fonts
+@sansHeadline: 'Freckle Face', Helvetica, sans-serif !important;
+@serifHeadline: @sansHeadline;//'Abhaya Libre', serif !important;
+@sans: 'Open Sans', Helvetica, sans-serif !important;

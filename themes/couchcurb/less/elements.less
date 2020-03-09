@@ -1,0 +1,214 @@
+// elements.less
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: @footer-background-color; // prevent the footer from floating on short pages
+    .site {
+        background: @body-background-color; 
+    }
+    &.page, &.single {
+        background: @white;
+    }
+}
+
+
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	quotes: "" "";
+}
+
+hr {
+	background-color: @gray-light;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+	margin: 0 0 1.5em 0;
+}
+
+ul {
+	list-style: disc;
+    &.plain {
+       list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    &.inline {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: inline;
+        li {
+            margin: 0;
+            padding: 0;
+            display: inline;
+            &::after {
+                content: ", ";
+            }
+            &:last-child {
+                &::after {
+                    content: "";
+                }
+            }
+        }        
+    }
+}
+
+
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+    &.table-rates {
+        width: 100%;
+        margin: 1.5em 0;
+        font-size: .9em;
+        table-layout: fixed;
+        th {
+            text-transform: uppercase;
+            background-color: @gray-light;
+            padding: .3em .5em;
+            vertical-align: middle;
+            color: white;
+            text-align: left;
+            &.center {
+                text-align:center;
+            }
+        }
+        td {
+            text-align: left;
+            vertical-align: middle;
+            padding: .3em .5em;
+            &.center {
+                text-align:center;
+            }
+        }
+        tr:nth-child(even) {background: @gray-lighter}
+    }
+    &.table-rates-mini {
+        width: auto;
+        display: inline-table;
+        border: 1px solid @body-color;
+        font-size: .9em;
+         text-align:center;
+        th {
+            font-size: .8em;
+             text-align:center;
+            font-weight: normal;
+        }
+        td, th {
+            padding: .3em 1em;
+        }
+    }
+}
+.table-rates-mini-container {
+    text-align: center;
+    tr:nth-child(even) {background: none}
+}
+
+@media screen and (max-width: @grid-max-breakpoint1) {
+     table.table-rates {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: @grid-max-breakpoint3) {
+    table.table-no-mobile {
+        display: block;
+        tr {
+             display: block ;
+        }
+        td {
+             display: block ;
+            width: 100% !important;
+            height: auto !important;
+            
+        }
+    }
+    table.table-rates {
+        font-size: .7em;
+    }
+}
+
+.video-js .vjs-big-play-button  {
+    top: 44%;
+    left: 44%;
+    height: 12%;
+    width: 12%;
+    
+    z-index: auto;
+    
+}
+
+
+.video-js .vjs-big-play-button:before, .video-js .vjs-control:before {
+    top: -15%;
+    position: relative;
+}
+
+@media screen and (max-width: @grid-max-breakpoint2) {
+    .video-js .vjs-big-play-button  {
+        top: 40%;
+        left: 40%;
+        height: 20%;
+        width: 20%;
+
+    }
+  
+    
+}
+
+@media screen and (max-width: @grid-max-breakpoint3) {
+    .video-js .vjs-big-play-button  {
+        top: 35%;
+        left: 35%;
+        height: 30%;
+        width: 30%;
+
+    }
+  
+    
+}
